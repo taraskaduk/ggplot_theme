@@ -32,18 +32,18 @@ colors <- tibble::tribble(
   )
 
 
-theme_tk <- function(base_size = 12, base_family = "Slabo 27px") {
+theme_tk <- function(base_size = 12, base_family = "Martel") {
   colors <- deframe(colors)
   (theme_foundation(base_size = base_size, base_family = base_family)
    + theme(
-     line = element_line(colour = "black"),
+     line = element_line(colour = "Dark"),
      rect = element_rect(fill = colors["Light"],
                          linetype = 0, colour = NA),
      text = element_text(colour = colors["Dark"]),
      axis.title = element_blank(),
      axis.text = element_text(),
      axis.ticks = element_blank(),
-     axis.line = element_blank(),
+     # axis.line = element_blank(),
      legend.background = element_rect(),
      legend.direction = "horizontal",
      legend.box = "vertical",
@@ -55,8 +55,8 @@ theme_tk <- function(base_size = 12, base_family = "Slabo 27px") {
      strip.background = element_rect(),
      plot.title = element_text(hjust = 0, size = rel(1.5),
                                family="Oswald"),
-     plot.caption = element_text(family="Slabo 27px"),
-     legend.title = element_text(family="Slabo 27px"),
+     plot.caption = element_text(family="Oswald"),
+     legend.title = element_text(family="Martel"),
      legend.text = element_text(family="Roboto Mono"),
      legend.position="bottom"
      ))
