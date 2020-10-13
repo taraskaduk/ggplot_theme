@@ -41,7 +41,7 @@ theme_tk <- function(base_size = 12, base_family = "Slabo 27px") {
                          linetype = 0, colour = NA),
      text = element_text(colour = colors["Dark"]),
      axis.title = element_blank(),
-     axis.text = element_text(),
+     axis.text = element_text(family="Roboto Mono"),
      axis.ticks = element_blank(),
      # axis.line = element_blank(),
      legend.background = element_rect(),
