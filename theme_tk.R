@@ -62,6 +62,9 @@ theme_tk <- function(base_size = 12, base_family = "Slabo 27px") {
      ))
 }
 
+
+theme_set(theme_tk)
+
 tk_pal <- function() {
   colors <- deframe(colors)
   values <- unname(colors[c("Blue", "Yellow", "Red")])
