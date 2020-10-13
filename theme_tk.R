@@ -32,7 +32,7 @@ colors <- tibble::tribble(
   )
 
 
-theme_tk <- function(base_size = 12, base_family = "Martel") {
+theme_tk <- function(base_size = 12, base_family = "Slabo 27px") {
   colors <- deframe(colors)
   (theme_foundation(base_size = base_size, base_family = base_family)
    + theme(
@@ -56,7 +56,7 @@ theme_tk <- function(base_size = 12, base_family = "Martel") {
      plot.title = element_text(hjust = 0, size = rel(1.5),
                                family="Oswald"),
      plot.caption = element_text(family="Oswald"),
-     legend.title = element_text(family="Martel"),
+     legend.title = element_text(family="Slabo 27px"),
      legend.text = element_text(family="Roboto Mono"),
      legend.position="bottom"
      ))
